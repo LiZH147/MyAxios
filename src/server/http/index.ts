@@ -29,7 +29,9 @@ const _RequstInterceptors: RequstInterceptors = {
         );
 
         // 响应错误实现重连功能
-        return retry(axiosInstance, err as AxiosError);
+        // return retry(axiosInstance, err as AxiosError);
+        // 不要自动重连
+        return axiosInstance
     }
 };
 

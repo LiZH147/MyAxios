@@ -18,7 +18,8 @@ app.get('/a', (req, res) => {
 app.post('/b', (req, res) => {
   res.send({
     code: 1,
-    message: '请求成功！' + req.body.message
+    message: '请求成功！' + req.body.message,
+    testMes: req.body.testMes
   })
 })
 

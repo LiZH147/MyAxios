@@ -15,7 +15,8 @@ function App() {
             .post({
                 url: '/b',
                 data: {
-                    message: 'POST'
+                    message: 'POST',
+                    testMes: 'test'
                 }
             })
             .then((data) => console.log('POST:', data));
